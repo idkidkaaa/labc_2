@@ -5,33 +5,33 @@ int test() {
 
 	list_t * list = NULL;
 
-	if (NULL != findel(list, 2)) {
+	if (NULL != findel(list, 34567890)) {
 		return 1;
 	}
 
-	if (NULL != findel(list, 32)) {
-		return 2;
+	if (NULL != findel(list, 24273459236469)) {
+		return 1;
 	}
 
 	list = init();
 	if (NULL == list) {
-		return 3;
+		return 1;
 	}
 
-	if (NULL == findel(list, 2)) {
-		return 4;
+	if (NULL == findel(list, 75)) {
+		return 1;
 	}
 	
-	if (NULL == addel(list, 32)) {
-		return 5;
+	if (NULL == addel(list, 11111111111)) {
+		return 1;
 	};
 
-	if (NULL == findel(list, 32)) {
-		return 6;
+	if (NULL == findel(list, 11111111111)) {
+		return 1;
 	}
 
-	if (NULL != delel(list, 32)) {
-		return 7;
+	if (NULL != delel(list, 2)) {
+		return 1;
 	}
 
 
