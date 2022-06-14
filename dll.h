@@ -15,11 +15,8 @@ list_t* init();
 
 list_t* delel(list_t*);
 
-list_t* delroot(list_t*);
-
 list_t* addel(list_t* );
 
 list_t* findel(list_t*, int );
 
-list_t* add_from_file(list_t*, char*);
 #endif 
